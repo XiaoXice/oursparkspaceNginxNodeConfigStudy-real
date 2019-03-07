@@ -144,6 +144,7 @@ npm run dev
 
 ```JS
 urlBase: "http://127.0.0.1:8080"
+如果报错404，试试"http://localhost:8080"
 ```
 
 然后就可以进行尝试了。
