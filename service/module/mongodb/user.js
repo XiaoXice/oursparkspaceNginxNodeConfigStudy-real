@@ -10,7 +10,7 @@ let user = new Schema({ // 实例化一个数据模板
 })
 user.static('addUser', function(openid, sessionKey, other){ // 添加一个静态方法
     return new Promise(async(rec,rej)=>{
-        let userIn = await this.find({openid}).exce(); // 是否存在同样OpenId
+        let userIn = await this.find({openid}); // 是否存在同样OpenId
         if(userIn.length == 0){ // 如果不存在
             let newUser = new this({ // 我们就创建一个
                 openid,
